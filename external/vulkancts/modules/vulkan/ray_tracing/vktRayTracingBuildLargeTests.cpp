@@ -565,7 +565,7 @@ tcu::TestCaseGroup*	createBuildLargeShaderSetTests (tcu::TestContext& testCtx)
 	}
 	buildTypes[] =
 	{
-		{  "gpu",		false,	VK_ACCELERATION_STRUCTURE_BUILD_TYPE_DEVICE_KHR	},
+		{  "gpu",		true,	VK_ACCELERATION_STRUCTURE_BUILD_TYPE_DEVICE_KHR	},
 		{  "cpu_ht",	true,	VK_ACCELERATION_STRUCTURE_BUILD_TYPE_HOST_KHR	},
 	};
 	const deUint32	threads[]	= { 1, 2, 3, 4, 8, std::numeric_limits<deUint32>::max() };
